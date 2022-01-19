@@ -31,6 +31,8 @@ const CustomerVerifications = db.customer_verifications;
 const LoyaltyRewards = db.loyalty_rewards;
 const BrandAnalyticsIds = db.brand_analyticsids;
 
+
+
 // TWILIO VERIFICATION: to verify a customer's phone number before he/she could claim a reward
 // -------------------
 // Twilio connection
@@ -103,7 +105,9 @@ exports.checkPhoneVerification = async (req, res) => {
     }
 }
 
-// TWILIO CAMPAIGNS
+
+
+// TWILIO SMS CAMPAIGNS
 // ----------------
 function formatCampaignBody({campaign, target}) {
     // POST request to format a message (send from our SaaS frontend by marketing teams)
